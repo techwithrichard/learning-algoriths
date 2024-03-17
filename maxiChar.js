@@ -4,12 +4,15 @@ function maxChar(str){
     let maxValue = 0
     let maxCharacter = ''
 
-    for(let char of str){
-        if(maxCharArray[char]){
-            maxCharacter[char] +=1
-        }else{
-            maxCharArray[char] = 1
-        }
+    // for(let char of str){
+    //     if(maxCharArray[char]){
+    //         maxCharacter[char] +=1 || 1
+    //     }else{
+    //         maxCharArray[char] = 1
+    //     }
+    // }
+    for ( let char of str){
+       maxCharArray[char] = maxCharArray[char] +1 || 1
     }
 
     // console.log(maxCharArray)
